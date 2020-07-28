@@ -1,0 +1,16 @@
+.header {
+    height: 85px;
+    &__wrapper {
+        display: flex;
+    }
+    &__item {
+        margin-top: 20px;
+        width: 20%;
+        display: flex;
+    }
+    &__country {
+        font-size: 14px;
+        color: rgb(36, 36, 36);
+          
+    }
+}
