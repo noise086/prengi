@@ -9,12 +9,20 @@
         
 }
 
+@import 'base/fonts';
+
+
 @import 'libs/bootstrap-grid.min';
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/slick';
+
+
+@import 'blocks/header';
+@import 'blocks/promo';
+
 
 .container {
     padding: 0;
 }
 
-@import 'blocks/header';
+
