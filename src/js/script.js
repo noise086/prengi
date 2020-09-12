@@ -34,14 +34,11 @@ $(document).ready(function() {
 	// validateForm('#quastions-form form');
 
 	$('.promo__slider').slick({
-		// centerMode: true,
-		// centerPadding: '60px',
 		dots: false,
 		speed: 1200,
-		// fade: true,
 		dots: true,
-		// prevArrow: '<button type="button" class="slick-prev"><img src="icons/feedback/arrow_left.png"></button>',
-		// nextArrow: '<button type="button" class="slick-next"><img src="icons/feedback/arrow_right.png"></button>',
+		prevArrow: '<button type="button" class="slick-prev"><img src="icons/slider/arrowLeft.png"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="icons/slider/arrowRight.png"></button>',
 		slidesToShow: 1,
 	  });
 		
