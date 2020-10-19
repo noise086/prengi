@@ -69,26 +69,35 @@
         }
 
 
-    .slick-arrow {
-        width: 10px;
-        background: none;
-        border: none;
-    }
-
-    .slick-prev {
+    &__slider_prev {
         position: absolute;
-        bottom: 25px;
-        left: 24%;
+        left: -14px;
+        bottom: 3px;
         z-index: 3;
+        img {
+            width: 130%;
+        }
+        :hover {
+            transition: 0.3s all;
+            transform: scale(1.2);
+        }
     }
     
-    .slick-next {
+    &__slider_next {
         position: absolute;
-        bottom: 25px;
-        left: 35%;
+        bottom: 3px;
+        right: 0;
+        z-index: 3;
+        img {
+            width: 130%;
+        }
+        :hover {
+            transition: 0.3s all;
+            transform: scale(1.2);
+        }
     }
 
-    .slick-dots {
+    &__slider_dots {
         list-style: circle;
         font-size: 32px;
         margin: 0;
@@ -99,6 +108,7 @@
         position: absolute;
         bottom: 30px;
         left: 26%;
+        z-index: 3;
 
 
 
@@ -106,9 +116,11 @@
             display: none;
         }
     }
-    .slick-active {
+    &__slider_active {
         list-style-type: disc;
+        margin: 0 5px;
     }
+    
 
 }
 
