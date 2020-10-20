@@ -19,10 +19,30 @@
 
 @import 'blocks/header';
 @import 'blocks/promo';
+@import 'blocks/_comparison';
+@import 'blocks/expert';
 
 
 .container {
     padding: 0;
+}
+
+@keyframes hide {
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
+.hide {
+    display: none;
+    animation: hide 1s;
+}
+@keyframes show {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+.show {
+    display: block;
+    animation: show 1s;
 }
 
 

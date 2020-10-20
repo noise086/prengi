@@ -44,12 +44,11 @@ function slider (wrapperSelector, fieldSelector, slidesSelector) {
 		return +(arg.replace(/\D/g, ''));
 	}
 
-	function setActiveDot () {
+	function setActiveDot (activeSelector, data) {
 		dotsArr.forEach(item => {
-			item.classList.remove('promo__slider_active');
-			if (item.getAttribute('data-slide') == counter) {
-				item.classList.add('promo__slider_active');
-			console.log(item);
+			item.classList.remove(activeSelector);
+			if (item.getAttribute(data) == counter) {
+				item.classList.add(activeSelector);
 		}
 		});
 	}
@@ -64,7 +63,7 @@ function slider (wrapperSelector, fieldSelector, slidesSelector) {
 		}
 		field.style.transform = `translateX(-${offset}px)`;
 		console.log(offset);
-		setActiveDot();
+		setActiveDot('promo__slider_active', 'data-slide');
 	});
 
 	next.addEventListener('click', e => {
@@ -77,7 +76,7 @@ function slider (wrapperSelector, fieldSelector, slidesSelector) {
 		}
 		field.style.transform = `translateX(-${offset}px)`;
 		console.log(offset);
-		setActiveDot();
+		setActiveDot('promo__slider_active', 'data-slide');
 	});
 
 	dots.addEventListener('click', e => {
@@ -85,12 +84,12 @@ function slider (wrapperSelector, fieldSelector, slidesSelector) {
 			if (e.target.getAttribute('data-slide')){
 			offset = delLetter(width) * (slideTo -1);
 			counter = slideTo;
-			setActiveDot();
+			setActiveDot('promo__slider_active', 'data-slide');
 			console.log(offset);
 			field.style.transform = `translateX(-${offset}px)`;
 		}
 	});
-	setActiveDot();
+	setActiveDot('promo__slider_active', 'data-slide');
 }
 
 export default slider;

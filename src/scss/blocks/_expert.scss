@@ -1,0 +1,67 @@
+.expert {
+    background: url(../../img/female.jpg) no-repeat center (center/cover);
+    padding: 80px 0 61px;
+    &__header {
+        width: 618px;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35.99px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__menuWrapper {
+        width: 843px;
+        height: 65px;
+        border: 1px solid #ffffff;
+        margin: 0 auto;
+        margin-top: 25px;  
+        border-radius: 5px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 13px 20px;
+        padding: 0;
+        :last-child {
+            border-right: none;
+            padding-right: 0;
+        }
+        :hover {
+            color: #6bd8f3;
+        }
+        &_item {
+            border-right: 1px solid rgb(77, 77, 77);
+            padding-right: 25px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 36px;
+            cursor: pointer;
+            transition: 0.5s all;
+
+
+            &_active {
+                color: #00c2f0;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+        
+    }
+    &__macbook {
+        display: block;
+        margin: 35px auto;
+    }
+    &__contentWtapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    &__content {
+        position: absolute;
+        top: 72px;
+        left: 223px;
+    }
+
+}
